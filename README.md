@@ -12,5 +12,6 @@ for details.
 Copyright © 2021, [Matthias Endler][me]. All rights reserved.
 
 
+[go]: https://go.dev
 [isc]: https://opensource.org/licenses/ISC
 [me]: https://m12r.at
