@@ -2,6 +2,16 @@
 
 This is a growing collection of some [Go][go] recipes.
 
+**Please, do not depend on this project via `go get`!** If you want to use
+some code from here, then just use copy and paste.
+
+## Recipes
+
+### Standard Library
+
+- `text/template`
+    - [Namespaced Functions in Templates](stdlib/text/template/namespaced_funcs.md)
+
 ## License
 
 This project is licensed under the [ISC License][isc]. See [LICENSE](LICENSE)
