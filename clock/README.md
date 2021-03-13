@@ -1,6 +1,7 @@
 # Clock
 
-This is a thin wrapper around `time.Now` to make dependent on it testable.
+This is a thin wrapper around `time.Now` to make functionality dependent on it
+testable.
 
 ## Example
 
@@ -32,7 +33,7 @@ func (us *UntestableService) IsOpen() bool {
 }
 ```
 
-The service below is testable, as it is possible to inject a `clock.Clock`.
+The service below is testable, as it injects a `clock.Clock`.
 
 ```go
 package some
@@ -62,7 +63,7 @@ func (ts *TestableService) IsOpen() bool {
 }
 ```
 
-Tests the `TestableService`:
+Integration tests of `TestableService`:
 
 ```go
 package some_test
@@ -84,8 +85,8 @@ func TestIsOpen(t *testing.T) {
 			name: "open on monday",
 			at: timeAt(t, "2021-03-08 12:00"),
 			expected: true,
-        },
-        // more test cases here
+                },
+                // more test cases here
 		{
 			name: "closed on sunday",
 			at: timeAt(t, "2021-03-14 12:00"),
@@ -113,3 +114,14 @@ func timeAt(t *testing.T, datetime string) time.Time {
     return ti
 }
 ```
+
+Have fun and enjoy coding.
+
+See you next time :)
+
+---
+
+Copyright © 2021, [Matthias Endler][me]. All rights reserved.
+
+
+[me]: https://m12r.at
