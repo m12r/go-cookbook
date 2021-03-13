@@ -11,6 +11,11 @@ some code from here, then just use copy and paste.
 
 - `text/template`
     - [Namespaced Functions in Templates](stdlib/text/template/namespaced_funcs.md)
+  
+### Useful Tiny Techniques
+
+- `github.com/m12r/go-cookbook/clock`
+    - [A thin wrapper around time.Now, to make it testable](clock/README.md)
 
 ## License
 
