@@ -92,7 +92,7 @@ func TestIsOpen(t *testing.T) {
 			at: timeAt(t, "2021-03-14 12:00"),
 			expected: true,
 		},
-    }
+        }
 	for _, tc := range testCases {
 		t.Run(tc.name, func(t *testing.T) {
 			ts := &some.TestableService{Clock: clock.StoppedAt(tc.at)}
