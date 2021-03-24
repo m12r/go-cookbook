@@ -10,7 +10,9 @@ some code from here, then just use copy and paste.
 ### Standard Library
 
 - `text/template`
-    - [Namespaced Functions in Templates](stdlib/text/template/namespaced_funcs.md)
+  - [Namespaced Functions in Templates](stdlib/text/template/namespaced_funcs.md)
+- `golang.org/x/term`
+  - [How To Read Password From Stdin](x/term/password_from_stdin.go)
   
 ### Useful Tiny Techniques
 
